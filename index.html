@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity Web Player | Bouncy Colors</title>
+    <title>Unity Web Player | ColorTile Jump</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=720 height=360 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-logo-title-footer"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Bouncy Colors</div>
+        <div id="unity-build-title">ColorTile Jump</div>
       </div>
     </div>
     <script>
@@ -52,15 +52,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/colorjump.loader.js";
+      var loaderUrl = buildUrl + "/ColorTile Jump.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/colorjump.data",
-        frameworkUrl: buildUrl + "/colorjump.framework.js",
-        codeUrl: buildUrl + "/colorjump.wasm",
+        dataUrl: buildUrl + "/ColorTile Jump.data",
+        frameworkUrl: buildUrl + "/ColorTile Jump.framework.js",
+        codeUrl: buildUrl + "/ColorTile Jump.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Rumbum",
-        productName: "Bouncy Colors",
+        productName: "ColorTile Jump",
         productVersion: "0.0.1",
         showBanner: unityShowBanner,
       };
@@ -98,8 +98,8 @@
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "720px";
+        canvas.style.height = "360px";
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
